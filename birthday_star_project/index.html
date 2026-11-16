@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b20">
+  <meta name="description" content="A little birthday adventure written in the stars.">
+  <title>Birthday Star — A Little Adventure</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="moon"></div><div id="stars"></div></div>
+  <main class="app">
+    <header class="topline"><span>✦ BIRTHDAY STAR ✦</span><span id="chapter-label">PROLOGUE</span></header>
+
+    <section class="screen active" id="welcome">
+      <div class="illustration">🌸</div>
+      <p class="eyebrow">A tiny adventure for a special day</p>
+      <h1>Written in<br><em>the stars</em></h1>
+      <p class="intro">Somewhere between a wish and a memory, a little surprise is waiting for you.</p>
+      <button class="primary" id="begin">Begin the adventure <span>→</span></button>
+      <p class="small-note">Best experienced with sound on — but sound is optional.</p>
+    </section>
+
+    <section class="screen" id="puzzle">
+      <div class="chapter-icon" id="puzzle-icon">🌙</div>
+      <p class="eyebrow" id="puzzle-kicker">CHAPTER 01 · THE FIRST CLUE</p>
+      <h2 id="puzzle-title">A little riddle</h2>
+      <p class="question" id="puzzle-question"></p>
+      <div class="answers" id="answers"></div>
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+      <p class="progress" id="progress">1 / 3</p>
+    </section>
+
+    <section class="screen" id="interlude">
+      <div class="illustration">✨</div>
+      <p class="eyebrow">CLUE DISCOVERED</p>
+      <h2 id="interlude-title">A star remembers</h2>
+      <p class="intro" id="interlude-copy"></p>
+      <button class="primary" id="next-puzzle">Continue <span>→</span></button>
+    </section>
+
+    <section class="screen" id="finale">
+      <div class="final-glow" aria-hidden="true">💫</div>
+      <p class="eyebrow">THE LAST PAGE</p>
+      <h1>Make a<br><em>wish</em></h1>
+      <p class="intro">You followed every little clue. Now, here's the birthday surprise waiting at the end of your journey.</p>
+      <button class="primary" id="reveal-surprise">Open your surprise ♡</button>
+      <div class="surprise hidden" id="surprise">
+        <div class="cake">🎂</div>
+        <h2>Happy Birthday!</h2>
+        <p>May your next chapter be filled with beautiful moments, kind people, unexpected adventures and wishes that come true.</p>
+        <div class="sparkles">✦ ✧ ⋆｡°✩</div>
+        <p class="signature">A little surprise, made just for you. ♡</p>
+      </div>
+      <button class="text-button hidden" id="restart">Experience it again ↻</button>
+    </section>
+
+    <footer>MADE OF STARDUST & A LITTLE CODE <span>♡</span></footer>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
